@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.navbar input {
+    color: #004699;
+    height: 20px;
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    justify-content: center;
+    margin: 30px 15px;
+    font-size: 12px;
+    letter-spacing: 0;
+    opacity: 0.85;
+    outline: none;
+    background-color: white;
+    border-color: #004699;
+}
+
+.navbar input:hover {
+    background-color: #004699;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar input:active {
+    background-color: #19c8dc;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgs > div {
+    margin: 20px;
+}
+
+.fakeimg {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px 0  #888888;
+    height: 460px;
+    width: 340px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 0px;
+    padding: 10px;
+}
+
+.fakeimg:hover {
+    box-shadow: 0 0 20px 0  #000000;
+    cursor: pointer;
+}
+
+.header {
+    color: #004699;
+    font-size: 20px;
+    flex: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.picture {
+    flex: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+    flex-direction: column;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tabinator {
+    background: #fff;
+    padding: 40px;
+    font-family: Open Sans;
+}
+
+.tabinator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabinator input {
+    display: none;
+}
+
+.tabinator label {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px 25px;
+    color: black;
+    margin-bottom: -3px;
+}
+
+.tabinator label:before {
+    content:'';
+    display:block;
+    width:100%;
+    position:absolute;
+    bottom:-11px;
+    left:0;
+    z-index:10;  
+}
+
+.tabinator label:hover {
+    color: #004699;
+    cursor: pointer;
+}
+
+.tabinator input:checked + label {
+    position: relative;
+    color: #000;
+    background: #fff;
+    border: 3px solid #004699;
+    border-bottom: 0px solid #fff;
+}
+
+.tabinator input:checked + label:after {
+    display: block;
+    border-bottom: 0px solid #fff;
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#content1, #content2, #content3, #content4, #content5 {
+    display: none;
+    border: 3px solid #004699;
+    padding: 15px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+    display: block;
+}

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.navbar input {
+    color: #004699;
+    height: 20px;
+    width: 60px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    justify-content: center;
+    margin: 30px 15px;
+    font-size: 12px;
+    letter-spacing: 0;
+    opacity: 0.85;
+    outline: none;
+    background-color: white;
+    border-color: #004699;
+}
+
+.navbar input:hover {
+    background-color: #004699;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar input:active {
+    background-color: #19c8dc;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 20%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main {
+    flex: 80%;
+    background-color: white;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgs > a {
+    margin: 20px;
+}
+
+.fakeimg {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px 0  #888888;
+    height: 460px;
+    width: 340px;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-gap: 0px;
+    padding: 10px;
+}
+.fakeimg:hover {
+    box-shadow: 0 0 20px 0  #000000;
+    cursor: pointer;
+}
+
+.header {
+    color: #004699;
+    font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+        margin: 10px 15px;
+        justify-content: center;
+    }
+}
