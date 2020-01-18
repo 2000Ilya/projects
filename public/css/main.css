@@ -147,6 +147,9 @@ a:visited {
         margin: 10px 3%;
     }
 
+    .projects div {
+        font-size: 13px;
+    }
     .side {
         margin-left: 30%;
     }
