@@ -241,9 +241,10 @@ i {
         margin-left: 30%;
     }
 
-    .tabinator label {
+    .tabinator label{
         width: 20%;
         font-size: 0;
+        padding: 5px 6%;
     }
 
     #content1, #content2, #content3, #content4, #content5 {
