@@ -106,6 +106,7 @@ i {
     background: #fff;
     font-family: Open Sans;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -162,6 +163,18 @@ i {
     top: 0; right: 0; bottom: 0; left: 0;
 }
 
+.tags {
+    display: inline;
+}
+
+.tags div {
+    border: solid #2a68af;
+    border-width: 2px 2px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 15px;
+}
+
 #content1, #content2, #content3, #content4, #content5 {
     display: none;
     border: 3px solid #2a68af;
@@ -187,13 +200,14 @@ i {
 }
 
 @media screen and (max-width: 720px) {
-    .row, .main{   
+    .row, .main{
+        margin-top: 20px;
         flex-direction: column;
     }
 
     .main {
         display: table;
-        width: 100%
+        width: 100%;
     }
 
     .picture {
@@ -201,13 +215,20 @@ i {
     }
 
     .header {
-        display: table-row-group;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .tabinator {
-        display: table-footer-group;
+        display: table-row-group;
         position: initial;
         font-size: 0;
+    }
+
+    .tags {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .navbar input {
