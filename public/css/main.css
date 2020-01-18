@@ -143,6 +143,14 @@ a:visited {
         justify-content: center;
     }
 
+    .header {
+        text-align: center;
+    }
+    
+    .projects {
+        justify-content: center;
+    }
+
     .navbar input {
         margin: 10px 3%;
     }
