@@ -33,14 +33,43 @@ body {
     border-color: #2a68af;
     font-weight: bold;
 }
+.navbar a {
+    border-width: 1px;
+    border-style: solid;
+    color: #2a68af;
+    height: 20px;
+    width: 60px;
+    text-decoration: none;
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 7px;
+    justify-content: center;
+    margin: 30px 3%;
+    font-size: 8px;
+    letter-spacing: 0;
+    opacity: 0.85;
+    outline: none;
+    background-color: white;
+    border-color: #2a68af;
+    font-weight: bold;
+}
 
 .navbar input:hover {
     background-color: #2a68af;
     color: white;
     cursor: pointer;
 }
+.navbar a:hover {
+    background-color: #2a68af;
+    color: white;
+    cursor: pointer;
+}
 
 .navbar input:active {
+    background-color: #19c8dc;
+}
+
+.navbar a:active {
     background-color: #19c8dc;
 }
 
@@ -234,6 +263,9 @@ i {
     }
 
     .navbar input {
+        margin: 10px 3%;
+    }
+    .navbar a {
         margin: 10px 3%;
     }
 
