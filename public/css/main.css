@@ -7,6 +7,49 @@ body {
     margin: 0;
 }
 
+.sitehead {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.sitename{
+    margin: auto;
+}
+
+.logo {
+    grid-template-rows: auto auto;
+}
+
+.sitenamegeneral{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a68af;
+}
+
+.subsitename{
+    font-size: 12px;
+    font-weight: bold
+}
+
+.lefthead {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.righthead {
+    margin: auto;
+}
+
+.form input {
+    border: 2px solid #2a68af;
+    margin: 11px;
+    text-align: center;
+}
+
 .w3-content img{
     height: 200px;
 }
