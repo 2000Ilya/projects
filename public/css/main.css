@@ -3,8 +3,7 @@
 }
 
 body {
-    font-family: Arial;
-    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .navbar {
@@ -14,31 +13,32 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar input {
+.navbar a {
+    border-width: 1px;
+    border-style: solid;
     color: #2a68af;
-    height: 20px;
-    width: 60px;
+    height: 40px;
+    width: 120px;
     text-decoration: none;
+    padding-top: 8px;
     text-align: center;
-    border-radius: 7px;
     justify-content: center;
-    margin: 30px 3%;
-    font-size: 8px;
+    margin: 30px 2%;
+    font-size: 16px;
     letter-spacing: 0;
-    opacity: 0.85;
     outline: none;
     background-color: white;
     border-color: #2a68af;
     font-weight: bold;
 }
 
-.navbar input:hover {
+.navbar a:hover {
     background-color: #2a68af;
     color: white;
     cursor: pointer;
 }
 
-.navbar input:active {
+.navbar a:active {
     background-color: #19c8dc;
 }
 
@@ -49,8 +49,19 @@ body {
 
 .side {
     flex: 20%;
-    background-color: #ffffff;
-    padding: 0 20px;
+    padding: 0 0 0 3%;
+}
+
+.subparagraph{
+    padding: 0 0 0 30%;
+}
+
+.subsubparagraph{
+    padding: 0 0 0 38%;
+}
+
+.arrowsubparagraph{
+    padding: 0 0 0 18%;
 }
 
 .sideheader {
@@ -64,9 +75,10 @@ body {
     width: 120px;
     border-width: 3px 3px 3px 3px;
     border: solid #2a68af;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     padding-top: 2px;
+    font-weight: bold;
 }
 
 .sidetext {
@@ -79,17 +91,14 @@ i {
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-    margin-right: 30px;
-}
-
-.arrow {
+    margin-right: 10%;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
 .main {
     flex: 80%;
-    background-color: white;
+    padding: 0 auto;
 }
 
 .projects {
@@ -98,15 +107,11 @@ i {
 }
 
 .projects > a {
-    margin: 20px;
-}
-
-a {
     text-decoration: none;
     color: #2a68af;
 }
 
-a:visited {
+.projects > a:visited {
     color: #2a68af;
 }
 
@@ -116,9 +121,11 @@ a:visited {
     height: 460px;
     width: 340px;
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     grid-gap: 0px;
     padding: 10px;
+    margin: 20px 20px 0 0;
+    font-size: 15px;
 }
 
 .projectcard:hover {
@@ -135,12 +142,102 @@ a:visited {
     font-size: 15px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 721px) and (max-width: 1189px) {
+    .projectcard {
+        font-size: 11.5px;
+        width: 255px;
+        height: 345px;
+        margin: 10px 10px 0 0;
+    }
+
+    .sidetext {
+        font-size: 10px;
+    }
+
+    .projectcard:hover {
+        box-shadow: 0 0 10px 0  #000000;
+    }
+
+    .state {
+        height: 20px;
+        width: 95px;
+        border-width: 1px 1px 1px 1px;
+        border: solid #2a68af;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 3px;
+    }
+
+    .navbar a {
+        margin: 10px 3%;
+        height: 30px;
+        width: 90px;
+        font-size: 12px;
+        padding-top: 6px;
+    }
+    
+    .main {
+        flex: 76%;
+    }
+
+    .side {
+        flex: 24%;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .row{   
         flex-direction: column;
-        margin: 10px 15px;
+        margin: 30px 15px;
         justify-content: center;
+    }
+
+    .firstarrow, .secondarrow, .thirdarrow  a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .firstfatherarrow:hover .firstarrow {
+        display: block;
+    }
+
+    .secondfatherarrow:hover .secondarrow {
+        display: block;
+    }
+
+    .thirdfatherarrow:hover .thirdarrow {
+        display: block;
+    }
+    
+    .firstarrow, .secondarrow, .thirdarrow {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 170px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .firstfatherarrow, .secondfatherarrow, .thirdfatherarrow, .fourthatherarrow  {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .arrow {
+        text-decoration: none;
+        background-color: #2a68af;
+        padding: 5px;
+        color: white;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    i {
+        padding: 0;
+        border-width: 0;
+        margin-right: 0;
     }
 
     .header {
@@ -148,17 +245,23 @@ a:visited {
     }
     
     .projects {
-        justify-content: center;
+        margin-right: center;
     }
 
-    .navbar input {
+    .navbar a {
         margin: 10px 3%;
+        height: 20px;
+        width: 60px;
+        font-size: 8px;
+        padding-top: 4px;
     }
 
-    .projects div {
-        font-size: 13px;
+    .projectcard {
+        font-size: 12px;
+        margin: 20px auto 0 0;
     }
+
     .side {
-        margin-left: 30%;
+        margin: auto;
     }
 }
