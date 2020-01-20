@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+* ::selection {
+    background-color: #fff
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
@@ -97,6 +101,16 @@ body {
     }
 }
 
+.navbarpng {
+    display: grid;
+    margin: 10px 2% 30px;
+}
+
+.navbarpng img{
+    height: 40px;
+    margin: auto;
+}
+
 .navbar {
     display: flex;
     background-color: white;
@@ -105,7 +119,7 @@ body {
 }
 
 .navbar a {
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     color: #2a68af;
     height: 40px;
@@ -114,7 +128,7 @@ body {
     padding-top: 8px;
     text-align: center;
     justify-content: center;
-    margin: 30px 2%;
+    margin: 5px 0 0;
     font-size: 16px;
     letter-spacing: 0;
     outline: none;
@@ -129,7 +143,15 @@ body {
     cursor: pointer;
 }
 
+.navbar a:hover::selection {
+    background-color: #3b80d0;
+}
+
 .navbar a:active {
+    background-color: #19c8dc;
+}
+
+.navbar a:active::selection {
     background-color: #19c8dc;
 }
 
@@ -202,6 +224,7 @@ i {
     font-size: 15px;
     flex: 60%;
     background-color: #ffffff;
+    display: grid;
 }
 
 .header h1 {
@@ -210,9 +233,29 @@ i {
     font-size: 15px;
 }
 
+.header a {
+    border: solid #2a68af;
+    border-width: 2px 2px;
+    padding: 5px 3px;
+    float: left;
+    text-decoration: none;
+    color: #2a68af;
+    margin: 10px 0 0 0;
+}
+
+.header a:hover {
+    background-color: #2a68af;
+    color: white;
+    cursor: pointer;
+}
+
 .picture {
     flex: 40%;
     background-color: #ffffff;
+}
+
+.picture a {
+    display: none;
 }
 
 .tabinator label img {
@@ -291,7 +334,7 @@ i {
     border: solid #2a68af;
     border-width: 2px 2px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: auto;
     margin-left: 15px;
 }
 
@@ -310,6 +353,11 @@ i {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5 {
     display: block;
+}
+
+.wallpaper {
+    width: 100%;
+    margin: 10px 0 0 0;
 }
 
 @media screen and (min-width: 721px) and (max-width: 1189px) {
@@ -344,6 +392,24 @@ i {
     .row, .main{
         margin-top: 20px;
         flex-direction: column;
+    }
+
+    .lefthead {
+        display: block;
+    }
+
+    .sitenamegeneral{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .subsitename{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .logintositetext {
+        font-size: 6px;
     }
 
     .firstarrow, .secondarrow, .thirdarrow  a {
@@ -406,8 +472,7 @@ i {
     .header {
         margin-top: 20px;
         margin-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
     }
     
     .tabinator {
@@ -456,5 +521,46 @@ i {
 
     .w3-content img{
         height: 75px;
+    }
+    
+    .header a {
+        display: none;
+    }
+      
+    .picture a {
+        height: 200px;
+        width: 100%;
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        border: solid #2a68af;
+        border-width: 2px 2px;
+        padding: 14%;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        margin: 10px 0 0 0;
+        background-image: url("/projects/public/images/default.png");
+        background-attachment: fixed;
+    }
+    
+    .picture a:hover {
+        background-image: none;
+        background-color: #2a68af;
+
+        color: white;
+        cursor: pointer;
+    }
+    
+    .picture a:visited {
+        background-color: #2a68af;
+    }
+
+    .picture a:active {
+        background-color: #19c8dc;
+    }
+      
+    .picture img {
+        display: none;
     }
 }

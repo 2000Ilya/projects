@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+* ::selection {
+    background-color: #fff
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
@@ -90,6 +94,16 @@ body {
     }
 }
 
+.navbarpng {
+    display: grid;
+    margin: 10px 2% 30px;
+}
+
+.navbarpng img{
+    height: 40px;
+    margin: auto;
+}
+
 .navbar {
     display: flex;
     background-color: white;
@@ -98,7 +112,7 @@ body {
 }
 
 .navbar a {
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     color: #2a68af;
     height: 40px;
@@ -107,7 +121,7 @@ body {
     padding-top: 8px;
     text-align: center;
     justify-content: center;
-    margin: 30px 2%;
+    margin: 5px 0 0;
     font-size: 16px;
     letter-spacing: 0;
     outline: none;
@@ -122,7 +136,15 @@ body {
     cursor: pointer;
 }
 
+.navbar a:hover::selection {
+    background-color: #3b80d0;
+}
+
 .navbar a:active {
+    background-color: #19c8dc;
+}
+
+.navbar a:active::selection {
     background-color: #19c8dc;
 }
 
@@ -194,7 +216,7 @@ i {
 
 .main {
     flex: 80%;
-    padding: 0 auto;
+    padding: 0 0 20px 0;
 }
 
 .projects {
@@ -290,6 +312,24 @@ i {
     .row{
         justify-content: center;
     }
+
+    .lefthead {
+        display: block;
+    }
+
+    .sitenamegeneral{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .subsitename{
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .logintositetext {
+        font-size: 6px;
+    }
     
     .main {
         margin: 30px auto;
@@ -382,6 +422,7 @@ i {
     .w3-content img{
         height: 75px;
     }
+    
 }
 
 @media screen and (max-width: 400px) {
