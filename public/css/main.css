@@ -4,6 +4,27 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+}
+
+.w3-content img{
+    height: 200px;
+}
+
+.w3-animate-fading{
+    animation: fading 10s infinite;
+}
+
+@keyframes fading{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
 }
 
 .navbar {
@@ -70,6 +91,23 @@ body {
     font-weight: bold;
 }
 
+.sidetext a:visited {
+    color: #2a68af;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.sidetext a {
+    text-decoration: none;
+    cursor: default;
+}
+
+.sidetext {
+    color: #2a68af;
+    cursor: default;
+    font-size: 12px;
+}
+
 .state {
     height: 40px;
     width: 120px;
@@ -79,11 +117,6 @@ body {
     text-align: center;
     padding-top: 2px;
     font-weight: bold;
-}
-
-.sidetext {
-    color: #2a68af;
-    font-size: 12px;
 }
 
 i {
@@ -140,6 +173,7 @@ i {
 .header {
     color: #2a68af;
     font-size: 15px;
+    cursor: default;
 }
 
 @media screen and (min-width: 721px) and (max-width: 1189px) {
@@ -183,13 +217,20 @@ i {
     .side {
         flex: 24%;
     }
+
+    .w3-content img {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 720px) {
-    .row{   
-        flex-direction: column;
-        margin: 30px 15px;
+    .row{
         justify-content: center;
+    }
+    
+    .main {
+        margin: 30px auto;
+        flex: unset;
     }
 
     .firstarrow, .secondarrow, .thirdarrow  a {
@@ -221,7 +262,7 @@ i {
 
     .firstfatherarrow, .secondfatherarrow, .thirdfatherarrow, .fourthatherarrow  {
         display: inline-block;
-        margin: 10px;
+        margin: 5px auto;
     }
 
     .arrow {
@@ -245,7 +286,8 @@ i {
     }
     
     .projects {
-        margin-right: center;
+        display: block;
+        flex-wrap: unset 
     }
 
     .navbar a {
@@ -258,10 +300,32 @@ i {
 
     .projectcard {
         font-size: 12px;
-        margin: 20px auto 0 0;
+        margin: 10px auto 20px auto;
     }
 
     .side {
-        margin: auto;
+        margin: 30px auto 0 auto;
+        flex: unset;
+    }
+
+    .sidetext a:visited{
+        color: white
+    }
+
+    .sidetext a{
+        color: white
+    }
+
+    .w3-content img{
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projectcard {
+        font-size: 11px;
+        width: 255px;
+        height: 345px;
+        margin: 10px auto 20px auto;
     }
 }

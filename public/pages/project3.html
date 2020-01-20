@@ -6,6 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="w3-content w3-section" style="max-width:100%">
+    <img class="mySlides w3-animate-fading" src="/projects/public/images/carousel1.png" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="/projects/public/images/carousel2.png" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="/projects/public/images/carousel3.png" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="/projects/public/images/carousel4.png" style="width:100%">
+</div>
 
 <div class="navbar">
     <a>ГЛАВНАЯ</a>
@@ -17,14 +23,44 @@
 
 <div class="row">
     <div class="side">
-        <h1>ПРОЕКТЫ</h1>
+        <div class="sideheader">ПРОЕКТЫ</div>
         <br>
-        <p><i class="arrow"></i> Проекты 2018</p>
-        <br>
-        <p><i class="arrow"></i> Проекты 2019 (1 семестр)</p>
-        <br>
-        <p><i class="arrow"></i> Инфраструктура</p>
-    </div>
+        <div class="sidetext">
+            <div class="firstfatherarrow">
+                <a href="#" class="arrow"><i></i>Проекты 2018</a>
+                <div class="firstarrow">
+                    <p class="subparagraph">1 курс</p>
+                    <p class="subparagraph">2 курс</p>
+                    <p class="subparagraph">3 курс</p>
+                </div>
+            </div>
+            <div class="secondfatherarrow">
+                <a href="#" class="arrow"><i></i>Проекты 2019 (1 семестр)</a>
+                <div class="secondarrow">
+                    <p class="subparagraph">1 курс</p>
+                    <p class="arrowsubparagraph"><i></i>2-3 курс</p>
+                    <p class="subsubparagraph">Веб-разработка</p>
+                    <p class="subsubparagraph">Видеоаналитика</p>
+                    <p class="subsubparagraph">Медицина</p>
+                    <p class="subsubparagraph">Нейронные сети</p>
+                    <p class="subsubparagraph">Радиотехника</p>
+                    <p class="subsubparagraph">Робототехника</p>
+                </div>
+            </div>
+            <div class="thirdfatherarrow">
+                <a href="#" class="arrow"><i></i>Инфраструктура</a>
+                <div class="thirdarrow">
+                    <p class="arrowsubparagraph"><i></i>Проектирование</p>
+                    <p class="subsubparagraph">Веб-приложение</p>
+                    <p class="subparagraph">Разработка</p>
+                    <p class="subparagraph">Внедрение</p>
+                </div>
+            </div>
+            <div class="fourthatherarrow">
+                <a href="#" class="arrow"><i></i>Образование</a>
+                </div>
+            </div>
+        </div>
     <div class="main">
         <div class="header">
             <h1>GAMEDEV</h1>
@@ -71,6 +107,8 @@
         </div>
     </div>
 </div>
+
+<script src="carousel.js"></script>
 
 </body>
 </html>
