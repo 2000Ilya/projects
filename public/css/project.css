@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+.w3-content img {
+    height: 150px;
+}
+
 .w3-content{
     margin-left:auto;
     margin-right:auto;
@@ -267,6 +271,7 @@ i {
         font-size: 12px;
         padding-top: 6px;
     }
+
     .w3-content img {
         height: 100px;
     }
