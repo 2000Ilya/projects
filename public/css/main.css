@@ -261,6 +261,11 @@ i {
     cursor: default;
 }
 
+.wallpaper {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
 @media screen and (min-width: 721px) and (max-width: 1189px) {
     .projectcard {
         font-size: 11.5px;
