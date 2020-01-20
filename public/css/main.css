@@ -12,6 +12,7 @@ body {
     grid-template-columns: auto auto;
     grid-gap: 10px;
     margin: 20px 0 20px 0;
+    cursor: default;
 }
 
 .sitename{
@@ -42,12 +43,31 @@ body {
 
 .righthead {
     margin: auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0px;
 }
 
 .form input {
     border: 2px solid #2a68af;
-    margin: 11px;
     text-align: center;
+}
+
+.logo input{
+    margin: 11px;
+}
+
+.logintositetext {
+    font-size: 10px;
+    font-weight: bold;
+    color: #2a68af;
+    margin-left: auto;
+}
+
+.siteloginform input{
+    border: 2px solid #2a68af;
+    text-align: center;
+    width: 100%;
 }
 
 .w3-content img{

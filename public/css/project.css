@@ -9,6 +9,69 @@ body {
     margin: 0;
 }
 
+.sitehead {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    margin: 20px 0 20px 0;
+    cursor: default;
+}
+
+.sitename{
+    margin: auto;
+}
+
+.logo {
+    grid-template-rows: auto auto;
+}
+
+.sitenamegeneral{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a68af;
+}
+
+.subsitename{
+    font-size: 12px;
+    font-weight: bold
+}
+
+.lefthead {
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.righthead {
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0px;
+}
+
+.form input {
+    border: 2px solid #2a68af;
+    text-align: center;
+}
+
+.logo input{
+    margin: 11px;
+}
+
+.logintositetext {
+    font-size: 10px;
+    font-weight: bold;
+    color: #2a68af;
+    margin-left: auto;
+}
+
+.siteloginform input{
+    border: 2px solid #2a68af;
+    text-align: center;
+    width: 100%;
+}
+
 .w3-content img {
     height: 150px;
 }
