@@ -1,7 +1,4 @@
-body {
-    border: 10px solid #2a68af;
-    padding: 100% 100%; 
-}
+
 
 .goback {
     color: #2a68af;
@@ -9,7 +6,8 @@ body {
     border-width: 2px 2px;
     display: inline-block;
     padding: 2px;
-    margin-left: 15px;
+    left: 0;
+    top: 0;
 }
 
 .goback:hover {
