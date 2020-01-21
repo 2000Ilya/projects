@@ -22,12 +22,25 @@
     font-size: 110px;
     font-weight: bold;
     color: #979797;
-    border-image: url("/projects/public/images/paperplane.png") 30 stretch;
-    border: 10px solid transparent;
+    border-bottom: 10px solid #2a68af;
     padding: 15px;
 }
 
 .errortext img {
     height: 70px;
     margin: 5px;
+}
+
+.bluetext {
+    color: #2a68af;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.greytext {
+    color: #979797;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0;
 }
