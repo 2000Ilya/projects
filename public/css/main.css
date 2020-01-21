@@ -341,7 +341,7 @@ i {
         flex: unset;
     }
 
-    .firstarrow div, .secondarrow div, .thirdarrow  div {
+    /*.firstarrow div, .secondarrow div, .thirdarrow  div {
       margin: 0;
       list-style: none;
       padding-left: 20px;
@@ -365,9 +365,9 @@ i {
 
     .firstarrow.open .arrow::before div, .secondarrow.open .arrow::before div, .thirdarrow.open .arrow::before div {
       display: block;
-    }
+    }*/
 
-    /*.firstarrow, .secondarrow, .thirdarrow  a {
+    .firstarrow, .secondarrow, .thirdarrow  a {
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -407,7 +407,7 @@ i {
         font-size: 10px;
         border: none;
         cursor: pointer;
-    }*/
+    }
 
     i {
         padding: 0;
