@@ -1,6 +1,6 @@
 * {
     font-family: 'proxima-nova', sans-serif;
-    margin: 20px;
+    margin: 10px;
 }
 
 .goback {
@@ -43,4 +43,30 @@
     font-size: 70px;
     text-align: center;
     margin-top: 0;
+}
+
+.allerrorinfo {
+    border-right: 10px dotted #2a68af;
+    border-bottom: 10px dotted #2a68af;
+    border-radius: 50%;
+    padding: 20px; 
+}
+
+.alldata {
+    border: 10px solid #979797;
+}
+
+@media screen and (max-width: 760px) {
+    .errortext {
+        font-size: 55px;
+    }
+
+    .bluetext, .greytext {
+        font-size: 35px;
+    }
+
+    .errortext img {
+        height: 35px;
+        margin: 2.5px;
+    }
 }
