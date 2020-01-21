@@ -1,4 +1,7 @@
-
+* {
+    font-family: 'proxima-nova', sans-serif;
+    margin: 20px;
+}
 
 .goback {
     color: #2a68af;
@@ -6,12 +9,25 @@
     border-width: 2px 2px;
     display: inline-block;
     padding: 2px;
-    left: 0;
-    top: 0;
 }
 
 .goback:hover {
     cursor: pointer;
     background-color: #2a68af;
     color: white
+}
+
+.errortext {
+    text-align: center;
+    font-size: 110px;
+    font-weight: bold;
+    color: #979797;
+    border-image: url("/projects/public/images/paperplane.png") 30 stretch;
+    border: 10px solid transparent;
+    padding: 15px;
+}
+
+.errortext img {
+    height: 70px;
+    margin: 5px;
 }
