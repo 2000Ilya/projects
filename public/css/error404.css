@@ -1,6 +1,6 @@
 * {
     font-family: 'proxima-nova', sans-serif;
-    margin: 10px;
+    margin: 20px;
 }
 
 .goback {
@@ -54,6 +54,7 @@
 
 .alldata {
     border: 10px solid #979797;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 760px) {
