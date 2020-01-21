@@ -517,6 +517,10 @@ i {
         font-size: 11px;
     }
 
+    .picture p {
+        display: block;
+    }
+
     .w3-content img {
         height: 75px;
     }
@@ -552,38 +556,6 @@ i {
         cursor: pointer;
     }
 
-    /*.picture a {
-        height: 200px;
-        width: 100%;
-        display: block;
-        font-size: 25px;
-        font-weight: bold;
-        border: solid #2a68af;
-        border-width: 2px 2px;
-        padding: 75px;
-        text-decoration: none;
-        text-align: center;
-        color: #2a68af;
-        margin: 10px 0 0 0;
-        background-image: url("/projects/public/images/default.png");
-        background-size: contain;
-    }
-    
-    .picture a:hover {
-        background-image: none;
-        background-color: #2a68af;
-        color: white;
-        cursor: pointer;
-    }
-    
-    .picture a:visited {
-        background-color: #2a68af;
-    }
-
-    .picture a:active {
-        background-color: #19c8dc;
-    }*/
-      
     .picture img {
         display: none;
     }
@@ -597,9 +569,14 @@ i {
     .navbarpng {
         margin: 10px 0% 10px;
     }
+    
     .side {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .picture p {
+        display: block;
     }
 }
