@@ -68,6 +68,7 @@ body {
     font-weight: bold;
     color: #2a68af;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .siteloginform input{
@@ -193,12 +194,16 @@ body {
 .sidetext a {
     color: #2a68af;
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
 }
 
 .sidetext {
     color: #2a68af;
     cursor: default;
+}
+
+.sidetext p {
+    cursor: pointer;
 }
 
 i {
@@ -258,6 +263,10 @@ i {
     display: none;
 }
 
+.picture p {
+    display: none;
+}
+
 .tabinator label img {
     justify-content: center; 
     height: 20px;
@@ -284,9 +293,9 @@ i {
 .tabinator label {
     box-sizing: border-box;
     display: inline-block;
-    padding: 5px 0.5%;
+    padding: 5px 1.1%;
     color: black;
-    margin-bottom: -3px;
+    margin-bottom: -2px;
     border-bottom: 0px;
     margin-left: 0px;
     font-size: 16px;
@@ -313,7 +322,7 @@ i {
     position: relative;
     color: #000;
     background: #fff;
-    border: 3px solid #2a68af;
+    border: 2px solid #2a68af;
     border-bottom: 0px solid #fff;
 }
 
@@ -340,7 +349,7 @@ i {
 
 #content1, #content2, #content3, #content4, #content5 {
     display: none;
-    border: 3px solid #2a68af;
+    border: 2px solid #2a68af;
     padding: 15px;
     bottom: 0;
     left: 0;
@@ -413,36 +422,12 @@ i {
     }
 
     .side {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        margin: 0 auto 0 auto;
+        flex: unset;
     }
 
-    .firstarrow, .secondarrow, .thirdarrow  a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    .firstfatherarrow:hover .firstarrow {
-        display: block;
-    }
-
-    .secondfatherarrow:hover .secondarrow {
-        display: block;
-    }
-
-    .thirdfatherarrow:hover .thirdarrow {
-        display: block;
-    }
-    
     .firstarrow, .secondarrow, .thirdarrow {
         display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 170px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
     }
 
     .firstfatherarrow, .secondfatherarrow, .thirdfatherarrow, .fourthatherarrow  {
@@ -513,27 +498,61 @@ i {
         font-size: 16px;
     }
 
-    .sidetext a:visited{
-        color: white
+    .sidetext a:visited {
+        color: white;
     }
     
-    .sidetext a{
-        color: white
+    .sidetext a {
+        color: white;
+        cursor: pointer;
+    }
+
+    .sidetext a:hover {
+        color: #2a68af;
+        background-color: white;
+        box-shadow: 0 0 0 2px #2a68af;
     }
 
     .sidetext {
-        font-size: 11px
+        font-size: 11px;
     }
 
-    .w3-content img{
+    .w3-content img {
         height: 75px;
     }
     
     .header a {
         display: none;
     }
+
+    .picture {
+        background: url("/projects/public/images/default.png") repeat;
+        background-size: contain;
+        border: 2px solid #2a68af;
+    }
       
-    .picture a {
+    .transbox {
+        margin: 85.5px;
+        background-color: #ffffff;
+        border: 2px solid #2a68af;
+        opacity: 0.8;
+        filter: alpha(opacity=60);
+        padding: 20px;
+        font-weight: bold;
+        color: #2a68af;
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .transbox:hover {
+        background-color: #2a68af;
+        color: white;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    /*.picture a {
         height: 200px;
         width: 100%;
         display: block;
@@ -541,19 +560,18 @@ i {
         font-weight: bold;
         border: solid #2a68af;
         border-width: 2px 2px;
-        padding: 14%;
+        padding: 75px;
         text-decoration: none;
         text-align: center;
-        color: #ffffff;
+        color: #2a68af;
         margin: 10px 0 0 0;
         background-image: url("/projects/public/images/default.png");
-        background-attachment: fixed;
+        background-size: contain;
     }
     
     .picture a:hover {
         background-image: none;
         background-color: #2a68af;
-
         color: white;
         cursor: pointer;
     }
@@ -564,7 +582,7 @@ i {
 
     .picture a:active {
         background-color: #19c8dc;
-    }
+    }*/
       
     .picture img {
         display: none;

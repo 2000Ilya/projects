@@ -1,0 +1,19 @@
+body {
+    border: 10px solid #2a68af;
+    padding: 100% 100%; 
+}
+
+.goback {
+    color: #2a68af;
+    border: 2px solid #2a68af;
+    border-width: 2px 2px;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+.goback:hover {
+    cursor: pointer;
+    background-color: #2a68af;
+    color: white
+}
