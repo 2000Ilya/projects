@@ -343,7 +343,7 @@ i {
     border: solid #2a68af;
     border-width: 2px 2px;
     display: inline-block;
-    padding: auto;
+    padding: 0 3px;
     margin-left: 15px;
 }
 
