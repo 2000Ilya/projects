@@ -51,8 +51,7 @@ i {
 }
 
 .allerrorinfo {
-    border-right: 10px dotted #2a68af;
-    border-bottom: 10px dotted #2a68af;
+    border-image: url("/projects/public/images/paperplane.png");
     border-radius: 50%;
     padding: 20px; 
 }
