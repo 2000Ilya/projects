@@ -54,7 +54,7 @@ body {
 
 .form input {
     border: 2px solid #2a68af;
-    text-align: center;
+    text-align: left;
 }
 
 .logo input{
@@ -71,7 +71,7 @@ body {
 
 .siteloginform input{
     border: 2px solid #2a68af;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
