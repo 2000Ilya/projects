@@ -230,7 +230,7 @@ i {
     flex: 100%;
     background-color: #ffffff;
     display: grid;
-    background-image: url("/projects/public/images/widedefault.png");
+    background-image: url("/projects/public/images/opacitydefault.png");
     background-size: contain;
 }
 
