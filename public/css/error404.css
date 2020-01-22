@@ -57,6 +57,21 @@
     vertical-align: middle;
 }
 
+@media screen and (max-width: 870px) {
+    .errortext {
+        font-size: 82.5px;
+    }
+
+    .bluetext, .greytext {
+        font-size: 52.5px;
+    }
+
+    .errortext img {
+        height: 52.5px;
+        margin: 3.8px;
+    }
+}
+
 @media screen and (max-width: 760px) {
     .errortext {
         font-size: 55px;
@@ -69,5 +84,39 @@
     .errortext img {
         height: 35px;
         margin: 2.5px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .errortext {
+        font-size: 36px;
+    }
+
+    .bluetext, .greytext {
+        font-size: 23px;
+    }
+
+    .errortext img {
+        height: 23px;
+        margin: 1.5px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    * {
+        margin: 5px;
+    }
+    
+    .errortext {
+        font-size: 24px;
+    }
+
+    .bluetext, .greytext {
+        font-size: 15.5px;
+    }
+
+    .errortext img {
+        height: 15.5px;
+        margin: 1px;
     }
 }
